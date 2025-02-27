@@ -1,17 +1,19 @@
 using System.Diagnostics;
+using System.Runtime.CompilerServices;
 using Microsoft.AspNetCore.Mvc;
 using Mission8Assignment_Group310.Models;
+using Task = Mission8Assignment_Group310.Models.Task;
 
 namespace Mission8Assignment_Group310.Controllers;
 
 public class HomeController : Controller
 {
-    private EnterTasksContext _context;
-    
-    public HomeController(EnterTasksContext temp) // constructor
+
+    private TasklistContext _tasklistContext;
+    public HomeController(TasklistContext temp)
     {
-        _context = temp;
-    } 
+        _tasklistContext = temp;
+    }
     
     public IActionResult Index() // main page
     {
