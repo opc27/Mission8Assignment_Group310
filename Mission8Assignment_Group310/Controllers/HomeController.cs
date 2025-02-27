@@ -1,23 +1,35 @@
 using System.Diagnostics;
+using System.Runtime.CompilerServices;
 using Microsoft.AspNetCore.Mvc;
 using Mission8Assignment_Group310.Models;
+using Task = Mission8Assignment_Group310.Models.Task;
 
 namespace Mission8Assignment_Group310.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    private TasklistContext _tasklistContext;
+    public HomeController(TasklistContext temp)
     {
-        _logger = logger;
+        _tasklistContext = temp;
     }
-
     public IActionResult Index()
     {
         return View();
     }
 
+    [HttpGet]
+    public IActionResult Tasklist()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Tasklist(Task response)
+    {
+        _tasklistContext.Tasks.Add(response);
+        return View();
+    }
     public IActionResult Privacy()
     {
         return View();
