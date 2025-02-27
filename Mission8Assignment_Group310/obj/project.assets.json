@@ -2421,31 +2421,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\josep\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/oliviachristensen/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\josep\\Source\\Repos\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj",
+      "projectUniqueName": "/Users/oliviachristensen/Downloads/RiderProjects/Mission8Assignment_Group310/Mission8Assignment_Group310/Mission8Assignment_Group310.csproj",
       "projectName": "Mission8Assignment_Group310",
-      "projectPath": "C:\\Users\\josep\\Source\\Repos\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj",
-      "packagesPath": "C:\\Users\\josep\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\josep\\Source\\Repos\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\obj\\",
+      "projectPath": "/Users/oliviachristensen/Downloads/RiderProjects/Mission8Assignment_Group310/Mission8Assignment_Group310/Mission8Assignment_Group310.csproj",
+      "packagesPath": "/Users/oliviachristensen/.nuget/packages/",
+      "outputPath": "/Users/oliviachristensen/Downloads/RiderProjects/Mission8Assignment_Group310/Mission8Assignment_Group310/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\josep\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/oliviachristensen/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2509,7 +2502,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
