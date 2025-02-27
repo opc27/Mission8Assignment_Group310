@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Mission8Assignment_Group310.props" />
+</Project>

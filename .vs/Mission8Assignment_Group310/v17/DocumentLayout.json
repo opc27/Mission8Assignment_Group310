@@ -49,12 +49,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 11,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -73,8 +69,7 @@
               "RelativeToolTip": "Mission8Assignment_Group310\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAADwvxMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T22:05:13.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T22:05:13.718Z"
             },
             {
               "$type": "Document",
@@ -86,8 +81,7 @@
               "RelativeToolTip": "Mission8Assignment_Group310\\Views\\Home\\ViewTasks.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-26T22:04:49.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T22:04:49.563Z"
             },
             {
               "$type": "Document",
@@ -99,8 +93,7 @@
               "RelativeToolTip": "Mission8Assignment_Group310\\Views\\Home\\AddTask.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-26T22:02:36.004Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T22:02:36.004Z"
             },
             {
               "$type": "Document",
@@ -112,8 +105,7 @@
               "RelativeToolTip": "Mission8Assignment_Group310\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-26T22:01:00.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T22:01:00.241Z"
             },
             {
               "$type": "Document",
@@ -125,8 +117,7 @@
               "RelativeToolTip": "Mission8Assignment_Group310\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-26T21:58:31.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T21:58:31.539Z"
             },
             {
               "$type": "Document",
@@ -138,8 +129,7 @@
               "RelativeToolTip": "Mission8Assignment_Group310\\Properties\\launchSettings.json",
               "ViewState": "AgIAABgAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-26T21:54:13.706Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T21:54:13.706Z"
             },
             {
               "$type": "Document",
@@ -151,8 +141,7 @@
               "RelativeToolTip": "Mission8Assignment_Group310\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-26T21:48:27.682Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T21:48:27.682Z"
             },
             {
               "$type": "Document",
@@ -164,8 +153,7 @@
               "RelativeToolTip": "Mission8Assignment_Group310\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-26T21:48:25.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T21:48:25.835Z"
             },
             {
               "$type": "Document",
@@ -177,13 +165,12 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.200\\Sdks\\Microsoft.NET.Sdk.Web\\Targets\\Sdk.Server.props",
               "ViewState": "AgIAAA8AAAAAAAAAAAAEwB0AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-02-26T21:48:00.385Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T21:48:00.385Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Mission8Assignment_Group310",
+              "Title": "Mission8Assignment_Group310.csproj",
               "DocumentMoniker": "C:\\Users\\Andrew Allred\\source\\repos\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj",
               "RelativeDocumentMoniker": "Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj",
               "ToolTip": "C:\\Users\\Andrew Allred\\source\\repos\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj",
