@@ -9,10 +9,10 @@ namespace Mission8Assignment_Group310.Controllers;
 public class HomeController : Controller
 {
 
-    private TasklistContext _tasklistContext;
+    private TasklistContext _context;
     public HomeController(TasklistContext temp)
     {
-        _tasklistContext = temp;
+        _context = temp;
     }
     
     public IActionResult Index() // main page
@@ -23,11 +23,6 @@ public class HomeController : Controller
     [HttpGet] // for entering tasks
     public IActionResult AddTask()
     {
-        // view bag for categories
-        ViewBag.Categories = _context.Categories
-            .OrderBy(x => x.CategoryName)
-            .ToList();
-        
         return View("AddTask", new Task());
     }
     
@@ -43,13 +38,9 @@ public class HomeController : Controller
         }
         else
         {
-            ViewBag.Categories = _context.Categories
-                .OrderBy(x => x.CategoryName)
-                .ToList();
             
             return View(response);
         }
-        
     }
     
     // displaying tasks
@@ -62,11 +53,7 @@ public class HomeController : Controller
     public IActionResult Edit(int id) // pull the movie for the movie that we're editing
     {
         var recordToEdit = _context.Tasks
-            .Single(x => x.TaskId == id);
-        
-        ViewBag.Categories = _context.Categories
-            .OrderBy(x => x.CategoryName)
-            .ToList();  
+            .Single(x => x.FormId == id);
         
         return View("AddTask", recordToEdit);
     }
@@ -74,7 +61,7 @@ public class HomeController : Controller
     [HttpPost] // edit tasks (post)
     public IActionResult Edit(Task updatedInfo) // save edited movie
     {
-        _context.Movies.Update(updatedInfo);
+        _context.Tasks.Update(updatedInfo);
         _context.SaveChanges();
         
         return RedirectToAction("ViewTasks");
@@ -84,7 +71,7 @@ public class HomeController : Controller
     public IActionResult Delete(int id) // delete movie
     {
         var recordToDelete = _context.Tasks
-            .Single(x => x.TaskId == id);
+            .Single(x => x.FormId == id);
 
         return View(recordToDelete);
     }
