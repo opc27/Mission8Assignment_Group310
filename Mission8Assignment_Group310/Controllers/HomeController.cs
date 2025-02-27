@@ -35,26 +35,27 @@ public class HomeController : Controller
     [HttpPost] // sending tasks
     //public IActionResult AddTask(Task response) // save changes to database
     //{
-        //if (ModelState.IsValid)
-        //{
-        //    _context.Tasks.Add(response); // add record to database
-        //    _context.SaveChanges();
-            
-        //    return View("Confirmation", response); 
-        //}
-        //else
-        //{
-        //    ViewBag.Categories = _context.Categories
-        //        .OrderBy(x => x.CategoryName)
-        //        .ToList();
-            
-        //    return View(response);
-        //}
-        
+    //if (ModelState.IsValid)
+    //{
+    //    _context.Tasks.Add(response); // add record to database
+    //    _context.SaveChanges();
+
+    //    return View("Confirmation", response); 
     //}
-    
+    //else
+    //{
+    //    ViewBag.Categories = _context.Categories
+    //        .OrderBy(x => x.CategoryName)
+    //        .ToList();
+
+    //    return View(response);
+    //}
+
+    //}
+
     // displaying tasks
-    public IActionResult displayTasks()
+    [HttpGet]
+    public IActionResult ViewTasks()
     {
         return View();
     }

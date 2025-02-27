@@ -4,8 +4,6 @@
 @{
 }
 
-<p>This is the page to add a view!!!</p>
-
 @* @model Movie *@
 
 <div class="text-center">
@@ -15,60 +13,44 @@
 
     <div class="container">
         <div class="form-container">
-            <form method="post">
+            <form method="post"> 
 
-                <input type="hidden" asp-for="TaskId" />
+                <!-- asp-for="TaskId" * -->
+                <input type="hidden" />
 
-                <!-- (Title, Year, Edited, CopiedToPlex are required-->
-
-                <select asp-for="CategoryID">
-                    <option value="">Select a Movie Category</option>
-                    @foreach (Category category in ViewBag.categories)
-                    {
-                        <option value="@category.CategoryID">@category.CategoryName</option>
-                    }
-                </select>
-
-                <label asp-for="MovieTitle">Movie Title:</label>
-                <input type="text" asp-for="MovieTitle" required />
-
-                <label asp-for="MovieYear">Year:</label>
-                <input type="number" asp-for="MovieYear" min="1888" max="2025" required />
-
-                <label asp-for="MovieDirector">Director:</label>
-                <input type="text" asp-for="MovieDirector" />
+                <!-- Task (Required) • Due Date • Quadrant (Required) • Category (Dropdown containing options:  Home, School, Work, Church) • Completed (True/False) -->
+                
+                <!-- asp-for="TaskDescription" -->
+                <label>Task:</label>
+                <input type="text" required />
 
                 <!-- For the Rating field, use a dropdown menu (G, PG, PG-13, R).-->
-                <label asp-for="MovieRating">Rating:</label>
-                <select asp-for="MovieRating">
-                    <option value="G">G</option>
-                    <option value="PG">PG</option>
-                    <option value="PG-13">PG-13</option>
-                    <option value="R">R</option>
+                <!-- asp-for="TaskQuadrant" -->
+                <label>Quadrant:</label>
+                <select>
+                    <option value=1>1 - Urgent/Important </option>
+                    <option value=2>2 - Not Urgent/Important</option>
+                    <option value=3>3 - Urgent/Not Important</option>
+                    <option value=4>4 - Not Urgent/Not Important</option>
                 </select>
 
-                <label asp-for="MovieEdited">Edited:</label>
-                <select asp-for="MovieEdited" required>
+                <!-- asp-for="CategoryID" -->
+                <label>Task Category:</label>
+                <select>
+                    <option value="">Select a Task Category</option>
+                @* @foreach (Category category in ViewBag.categories) *@
+                    <!-- { -->
+                @* <option value="@category.CategoryID">@category.CategoryName</option>  *@
+                    <!-- } -->
+                </select>
+
+                <!-- asp-for="TaskDone"> -->
+                <label>Task Status:</label>
+                <select required>
                     <option value="">-- Select --</option>
-                    <option value="true">Yes</option>
-                    <option value="false">No</option>
+                    <option value="true">Complete</option>
+                    <option value="false">Incomplete</option>
                 </select>
-
-                <!-- Lent to field-->
-                <label asp-for="MovieLent">Lent To:</label>
-                <input type="text" asp-for="MovieLent" />
-
-                <!-- Movie Copied to Plex-->
-                <label asp-for="MoviePlex">Movie Copied to Plex:</label>
-                <select asp-for="MoviePlex" required>
-                    <option value="">-- Select --</option>
-                    <option value="true">Yes</option>
-                    <option value="false">No</option>
-                </select>
-
-                <!-- Notes should be limited to 25 characters. (#notcoveredinthevideos)-->
-                <label asp-for="MovieNotes">Notes:</label>
-                <input asp-for="MovieNotes" maxlength="25" />
 
                 <!-- Submit Button-->
                 <button type="submit">Submit</button>

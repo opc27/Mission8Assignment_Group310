@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{4740E161-B3D5-4342-A2F7-A9FFEDF7989D}|Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj|solutionrelative:mission8assignment_group310\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4740E161-B3D5-4342-A2F7-A9FFEDF7989D}|Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj|c:\\users\\andrew allred\\source\\repos\\mission8assignment_group310\\mission8assignment_group310\\mission8assignment_group310\\views\\home\\viewtasks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4740E161-B3D5-4342-A2F7-A9FFEDF7989D}|Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj|solutionrelative:mission8assignment_group310\\views\\home\\viewtasks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4740E161-B3D5-4342-A2F7-A9FFEDF7989D}|Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj|c:\\users\\andrew allred\\source\\repos\\mission8assignment_group310\\mission8assignment_group310\\mission8assignment_group310\\views\\home\\addtask.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4740E161-B3D5-4342-A2F7-A9FFEDF7989D}|Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj|solutionrelative:mission8assignment_group310\\views\\home\\addtask.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -15,20 +19,12 @@
       "RelativeMoniker": "D:0:0:{4740E161-B3D5-4342-A2F7-A9FFEDF7989D}|Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj|solutionrelative:mission8assignment_group310\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4740E161-B3D5-4342-A2F7-A9FFEDF7989D}|Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj|c:\\users\\andrew allred\\source\\repos\\mission8assignment_group310\\mission8assignment_group310\\mission8assignment_group310\\views\\home\\viewtasks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4740E161-B3D5-4342-A2F7-A9FFEDF7989D}|Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj|solutionrelative:mission8assignment_group310\\views\\home\\viewtasks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4740E161-B3D5-4342-A2F7-A9FFEDF7989D}|Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj|c:\\users\\andrew allred\\source\\repos\\mission8assignment_group310\\mission8assignment_group310\\mission8assignment_group310\\mission8assignment_group310.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4740E161-B3D5-4342-A2F7-A9FFEDF7989D}|Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj|solutionrelative:mission8assignment_group310\\mission8assignment_group310.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{4740E161-B3D5-4342-A2F7-A9FFEDF7989D}|Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj|c:\\users\\andrew allred\\source\\repos\\mission8assignment_group310\\mission8assignment_group310\\mission8assignment_group310\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4740E161-B3D5-4342-A2F7-A9FFEDF7989D}|Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj|solutionrelative:mission8assignment_group310\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4740E161-B3D5-4342-A2F7-A9FFEDF7989D}|Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj|c:\\users\\andrew allred\\source\\repos\\mission8assignment_group310\\mission8assignment_group310\\mission8assignment_group310\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{4740E161-B3D5-4342-A2F7-A9FFEDF7989D}|Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj|solutionrelative:mission8assignment_group310\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4740E161-B3D5-4342-A2F7-A9FFEDF7989D}|Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj|c:\\users\\andrew allred\\source\\repos\\mission8assignment_group310\\mission8assignment_group310\\mission8assignment_group310\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4740E161-B3D5-4342-A2F7-A9FFEDF7989D}|Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj|solutionrelative:mission8assignment_group310\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -73,73 +69,61 @@
               "RelativeDocumentMoniker": "Mission8Assignment_Group310\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\Andrew Allred\\source\\repos\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Mission8Assignment_Group310\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA1wB8AAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwB8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-26T22:05:13.718Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ViewTasks.cshtml",
               "DocumentMoniker": "C:\\Users\\Andrew Allred\\source\\repos\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Views\\Home\\ViewTasks.cshtml",
               "RelativeDocumentMoniker": "Mission8Assignment_Group310\\Views\\Home\\ViewTasks.cshtml",
               "ToolTip": "C:\\Users\\Andrew Allred\\source\\repos\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Views\\Home\\ViewTasks.cshtml",
               "RelativeToolTip": "Mission8Assignment_Group310\\Views\\Home\\ViewTasks.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-26T22:04:49.563Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AddTask.cshtml",
               "DocumentMoniker": "C:\\Users\\Andrew Allred\\source\\repos\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Views\\Home\\AddTask.cshtml",
               "RelativeDocumentMoniker": "Mission8Assignment_Group310\\Views\\Home\\AddTask.cshtml",
               "ToolTip": "C:\\Users\\Andrew Allred\\source\\repos\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Views\\Home\\AddTask.cshtml",
               "RelativeToolTip": "Mission8Assignment_Group310\\Views\\Home\\AddTask.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-26T22:02:36.004Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Andrew Allred\\source\\repos\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Mission8Assignment_Group310\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\Andrew Allred\\source\\repos\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Mission8Assignment_Group310\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-26T22:01:00.241Z"
+              "WhenOpened": "2025-02-26T22:01:00.241Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Andrew Allred\\source\\repos\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Mission8Assignment_Group310\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Andrew Allred\\source\\repos\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Mission8Assignment_Group310\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAABrAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACcAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-26T21:58:31.539Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Mission8Assignment_Group310.csproj",
-              "DocumentMoniker": "C:\\Users\\Andrew Allred\\source\\repos\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj",
-              "RelativeDocumentMoniker": "Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj",
-              "ToolTip": "C:\\Users\\Andrew Allred\\source\\repos\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj",
-              "RelativeToolTip": "Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-26T21:41:56.266Z",
               "EditorCaption": ""
             }
           ]
