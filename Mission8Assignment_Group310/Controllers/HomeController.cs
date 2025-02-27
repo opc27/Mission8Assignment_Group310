@@ -19,18 +19,18 @@ public class HomeController : Controller
     }
 
     [HttpGet] // for entering tasks
-    public IActionResult EnterTask()
+    public IActionResult AddTask()
     {
         // view bag for categories
         ViewBag.Categories = _context.Categories
             .OrderBy(x => x.CategoryName)
             .ToList();
         
-        return View("EnterTask", new Task());
+        return View("AddTask", new Task());
     }
     
     [HttpPost] // sending tasks
-    public IActionResult EnterTask(Task response) // save changes to database
+    public IActionResult AddTask(Task response) // save changes to database
     {
         if (ModelState.IsValid)
         {
@@ -51,7 +51,7 @@ public class HomeController : Controller
     }
     
     // displaying tasks
-    public IActionResult displayTasks()
+    public IActionResult ViewTasks()
     {
         return View();
     }
@@ -66,7 +66,7 @@ public class HomeController : Controller
             .OrderBy(x => x.CategoryName)
             .ToList();  
         
-        return View("EnterTask", recordToEdit);
+        return View("AddTask", recordToEdit);
     }
 
     [HttpPost] // edit tasks (post)
@@ -75,7 +75,7 @@ public class HomeController : Controller
         _context.Movies.Update(updatedInfo);
         _context.SaveChanges();
         
-        return RedirectToAction("displayTasks");
+        return RedirectToAction("ViewTasks");
     }
 
     [HttpGet] // delete tasks (get)
@@ -93,6 +93,6 @@ public class HomeController : Controller
         _context.Tasks.Remove(task);
         _context.SaveChanges();
         
-        return RedirectToAction("displayTasks");
+        return RedirectToAction("ViewTasks");
     }
 }
