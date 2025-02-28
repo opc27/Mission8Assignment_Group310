@@ -23,6 +23,11 @@ public class HomeController : Controller
     [HttpGet] // for entering tasks
     public IActionResult AddTask()
     {
+        // view bag for categories
+        ViewBag.Categories = _context.Categories
+            .OrderBy(x => x.CategoryName)
+            .ToList();
+        
         return View("AddTask", new Task());
     }
     
@@ -38,6 +43,9 @@ public class HomeController : Controller
         }
         else
         {
+            ViewBag.Categories = _context.Categories
+                .OrderBy(x => x.CategoryName)
+                .ToList();
             
             return View(response);
         }
@@ -63,6 +71,10 @@ public class HomeController : Controller
     {
         _context.Tasks.Update(updatedInfo);
         _context.SaveChanges();
+        
+        ViewBag.Categories = _context.Categories
+            .OrderBy(x => x.CategoryName)
+            .ToList();  
         
         return RedirectToAction("ViewTasks");
     }
