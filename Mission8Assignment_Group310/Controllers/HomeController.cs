@@ -50,7 +50,7 @@ public class HomeController : Controller
     }
     
     [HttpGet] // edit tasks (get)
-    public IActionResult Edit(int id) // pull the movie for the movie that we're editing
+    public IActionResult Edit(int id) // pull the task for the task that we're editing
     {
         var recordToEdit = _context.Tasks
             .Single(x => x.FormId == id);
@@ -59,7 +59,7 @@ public class HomeController : Controller
     }
 
     [HttpPost] // edit tasks (post)
-    public IActionResult Edit(Task updatedInfo) // save edited movie
+    public IActionResult Edit(Task updatedInfo) // save edited task
     {
         _context.Tasks.Update(updatedInfo);
         _context.SaveChanges();
@@ -68,7 +68,7 @@ public class HomeController : Controller
     }
 
     [HttpGet] // delete tasks (get)
-    public IActionResult Delete(int id) // delete movie
+    public IActionResult Delete(int id) // delete task
     {
         var recordToDelete = _context.Tasks
             .Single(x => x.FormId == id);

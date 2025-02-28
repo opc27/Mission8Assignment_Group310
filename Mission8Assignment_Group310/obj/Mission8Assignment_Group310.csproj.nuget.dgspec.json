@@ -2,8 +2,6 @@
   "format": 1,
   "restore": {
     "/Users/oliviachristensen/Downloads/RiderProjects/Mission8Assignment_Group310/Mission8Assignment_Group310/Mission8Assignment_Group310.csproj": {}
-<<<<<<< HEAD
-    "/Users/oliviachristensen/Downloads/RiderProjects/Mission8Assignment_Group310/Mission8Assignment_Group310/Mission8Assignment_Group310.csproj": {}
   },
   "projects": {
     "/Users/oliviachristensen/Downloads/RiderProjects/Mission8Assignment_Group310/Mission8Assignment_Group310/Mission8Assignment_Group310.csproj": {
@@ -17,37 +15,11 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/oliviachristensen/.nuget/NuGet/NuGet.Config"
-=======
-    "C:\\Users\\Andrew Allred\\source\\repos\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Andrew Allred\\source\\repos\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Andrew Allred\\source\\repos\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj",
-        "projectName": "Mission8Assignment_Group310",
-        "projectPath": "C:\\Users\\Andrew Allred\\source\\repos\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310.csproj",
-        "packagesPath": "C:\\Users\\Andrew Allred\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andrew Allred\\source\\repos\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\Mission8Assignment_Group310\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Andrew Allred\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> AJ
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-<<<<<<< HEAD
-=======
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
->>>>>>> AJ
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -74,7 +46,6 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.13, )"
-<<<<<<< HEAD
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -91,8 +62,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.13, )"
-=======
->>>>>>> AJ
             }
           },
           "imports": [
@@ -114,33 +83,6 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
->>>>>>> AJ
-    "/Users/oliviachristensen/Downloads/RiderProjects/Mission8Assignment_Group310/Mission8Assignment_Group310/Mission8Assignment_Group310.csproj": {
-        "projectUniqueName": "/Users/oliviachristensen/Downloads/RiderProjects/Mission8Assignment_Group310/Mission8Assignment_Group310/Mission8Assignment_Group310.csproj",
-        "projectPath": "/Users/oliviachristensen/Downloads/RiderProjects/Mission8Assignment_Group310/Mission8Assignment_Group310/Mission8Assignment_Group310.csproj",
-        "packagesPath": "/Users/oliviachristensen/.nuget/packages/",
-        "outputPath": "/Users/oliviachristensen/Downloads/RiderProjects/Mission8Assignment_Group310/Mission8Assignment_Group310/obj/",
-          "/Users/oliviachristensen/.nuget/NuGet/NuGet.Config"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.13, )"
-            },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
-              "target": "Package",
-              "version": "[8.0.13, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.13, )"
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
         }
       }
