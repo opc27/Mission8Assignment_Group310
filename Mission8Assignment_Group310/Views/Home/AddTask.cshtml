@@ -4,7 +4,7 @@
 @{
 }
 
-@* @model Task *@
+@model Mission8Assignment_Group310.Models.Task
 
 <div class="text-center">
     <h1 class="display-4">Enter Task Here</h1>
@@ -40,10 +40,10 @@
                 <label asp-for="CategoryID">Task Category:</label>
                 <select asp-for="CategoryID">
                     <option value="">-- Select a Task Category --</option>
-                    @foreach (Category category in ViewBag.categories) *@
-                    { 
-                        <option value="@category.CategoryID">@category.CategoryName</option> 
-                    } 
+                    @foreach (Category category in ViewBag.categories)
+                    {
+                       <option value="@category.CategoryID">@category.CategoryName</option> 
+                    };
                 </select>
 
                 <!-- Select Task Complete or Incomplete -->
