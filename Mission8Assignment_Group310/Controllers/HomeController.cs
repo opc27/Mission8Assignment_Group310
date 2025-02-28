@@ -24,7 +24,7 @@ public class HomeController : Controller
     public IActionResult AddTask()
     {
         // view bag for categories
-        ViewBag.Categories = _context.Categories
+        ViewBag.Categories = _tasklistContext.Categories
             .OrderBy(x => x.CategoryName)
             .ToList();
         
@@ -36,14 +36,14 @@ public class HomeController : Controller
     {
         if (ModelState.IsValid)
         {
-            _context.Tasks.Add(response); // add record to database
-            _context.SaveChanges();
+            _tasklistContext.Tasks.Add(response); // add record to database
+            _tasklistContext.SaveChanges();
             
             return View("Confirmation", response); 
         }
         else
         {
-            ViewBag.Categories = _context.Categories
+            ViewBag.Categories = _tasklistContext.Categories
                 .OrderBy(x => x.CategoryName)
                 .ToList();
             
@@ -61,10 +61,10 @@ public class HomeController : Controller
     [HttpGet] // edit tasks (get)
     public IActionResult Edit(int id) // pull the movie for the movie that we're editing
     {
-        var recordToEdit = _context.Tasks
+        var recordToEdit = _tasklistContext.Tasks
             .Single(x => x.TaskId == id);
         
-        ViewBag.Categories = _context.Categories
+        ViewBag.Categories = _tasklistContext.Categories
             .OrderBy(x => x.CategoryName)
             .ToList();  
         
@@ -74,8 +74,8 @@ public class HomeController : Controller
     [HttpPost] // edit tasks (post)
     public IActionResult Edit(Task updatedInfo) // save edited movie
     {
-        _context.Movies.Update(updatedInfo);
-        _context.SaveChanges();
+        _tasklistContext.Tasks.Update(updatedInfo);
+        _tasklistContext.SaveChanges();
         
         return RedirectToAction("ViewTasks");
     }
@@ -83,7 +83,7 @@ public class HomeController : Controller
     [HttpGet] // delete tasks (get)
     public IActionResult Delete(int id) // delete movie
     {
-        var recordToDelete = _context.Tasks
+        var recordToDelete = _tasklistContext.Tasks
             .Single(x => x.TaskId == id);
 
         return View(recordToDelete);
@@ -92,8 +92,8 @@ public class HomeController : Controller
     [HttpPost] // delete tasks (post)
     public IActionResult Delete(Task task) // save changes to database
     {
-        _context.Tasks.Remove(task);
-        _context.SaveChanges();
+        _tasklistContext.Tasks.Remove(task);
+        _tasklistContext.SaveChanges();
         
         return RedirectToAction("ViewTasks");
     }
