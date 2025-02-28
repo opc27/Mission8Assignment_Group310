@@ -16,9 +16,10 @@ namespace Mission8Assignment_Group310.Models
         public int Quadrant { get; set; }
 
         public bool? Complete { get; set; }
-
-        public int CategoryID { get; set; }
-        public Category Category { get; set; }
+        
+        [ForeignKey("CategoryID")]
+        public int? CategoryID { get; set; }
+        public Category? Category { get; set; }
     }
 }
 
