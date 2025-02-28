@@ -1,0 +1,12 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model Task //This is the model that I want to use in this view *@
+
+<h2>"@Model.TaskName" submission received. Thank you!</h2>
+
+<a asp-controller="Home" asp-action="Index" class="btn btn-primary">Home</a>
+<a asp-controller="Home" asp-action="ViewTasks" class="btn btn-primary">View Movies</a>
