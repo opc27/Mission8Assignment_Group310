@@ -2,6 +2,8 @@
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace Mission8Assignment_Group310.Migrations
 {
     /// <inheritdoc />
@@ -27,7 +29,7 @@ namespace Mission8Assignment_Group310.Migrations
                 name: "Tasks",
                 columns: table => new
                 {
-                    FormId = table.Column<int>(type: "INTEGER", nullable: false)
+                    TaskId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     TaskName = table.Column<string>(type: "TEXT", nullable: false),
                     DueDate = table.Column<string>(type: "TEXT", nullable: true),
@@ -37,13 +39,24 @@ namespace Mission8Assignment_Group310.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Tasks", x => x.FormId);
+                    table.PrimaryKey("PK_Tasks", x => x.TaskId);
                     table.ForeignKey(
                         name: "FK_Tasks_Categories_CategoryID",
                         column: x => x.CategoryID,
                         principalTable: "Categories",
                         principalColumn: "CategoryID",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.InsertData(
+                table: "Categories",
+                columns: new[] { "CategoryID", "CategoryName" },
+                values: new object[,]
+                {
+                    { 1, "Home" },
+                    { 2, "School" },
+                    { 3, "Work" },
+                    { 4, "Church" }
                 });
 
             migrationBuilder.CreateIndex(

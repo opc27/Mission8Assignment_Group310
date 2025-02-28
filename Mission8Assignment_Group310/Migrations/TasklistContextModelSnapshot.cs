@@ -29,11 +29,33 @@ namespace Mission8Assignment_Group310.Migrations
                     b.HasKey("CategoryID");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            CategoryID = 1,
+                            CategoryName = "Home"
+                        },
+                        new
+                        {
+                            CategoryID = 2,
+                            CategoryName = "School"
+                        },
+                        new
+                        {
+                            CategoryID = 3,
+                            CategoryName = "Work"
+                        },
+                        new
+                        {
+                            CategoryID = 4,
+                            CategoryName = "Church"
+                        });
                 });
 
             modelBuilder.Entity("Mission8Assignment_Group310.Models.Task", b =>
                 {
-                    b.Property<int>("FormId")
+                    b.Property<int>("TaskId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -53,7 +75,7 @@ namespace Mission8Assignment_Group310.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.HasKey("FormId");
+                    b.HasKey("TaskId");
 
                     b.HasIndex("CategoryID");
 

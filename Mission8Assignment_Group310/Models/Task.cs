@@ -7,7 +7,7 @@ namespace Mission8Assignment_Group310.Models
     public class Task
     {
         [Key]
-        public int FormId { get; set; }
+        public int TaskId { get; set; }
         [Required]
         public string TaskName {  get; set; }
 
