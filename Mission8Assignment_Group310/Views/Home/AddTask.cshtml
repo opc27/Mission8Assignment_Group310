@@ -4,4 +4,63 @@
 @{
 }
 
-<p>This is the page to add a view</p>
+@* @model Movie *@
+
+<div class="text-center">
+    <h1 class="display-4">Enter Task Here</h1>
+
+    <br />
+
+    <div class="container">
+        <div class="form-container">
+            <form method="post"> 
+
+                <!-- asp-for="TaskId" * -->
+                <input type="hidden" />
+
+                <!-- Task (Required) • Due Date • Quadrant (Required) • Category (Dropdown containing options:  Home, School, Work, Church) • Completed (True/False) -->
+                
+                <!-- asp-for="TaskDescription" -->
+                <label>Task:</label>
+                <input type="text" required />
+
+                <!-- For the Rating field, use a dropdown menu (G, PG, PG-13, R).-->
+                <!-- asp-for="TaskQuadrant" -->
+                <label>Quadrant:</label>
+                <select>
+                    <option value=1>1 - Urgent/Important </option>
+                    <option value=2>2 - Not Urgent/Important</option>
+                    <option value=3>3 - Urgent/Not Important</option>
+                    <option value=4>4 - Not Urgent/Not Important</option>
+                </select>
+
+                <!-- asp-for="CategoryID" -->
+                <label>Task Category:</label>
+                <select>
+                    <option value="">Select a Task Category</option>
+                @* @foreach (Category category in ViewBag.categories) *@
+                    <!-- { -->
+                @* <option value="@category.CategoryID">@category.CategoryName</option>  *@
+                    <!-- } -->
+                </select>
+
+                <!-- asp-for="TaskDone"> -->
+                <label>Task Status:</label>
+                <select required>
+                    <option value="">-- Select --</option>
+                    <option value="true">Complete</option>
+                    <option value="false">Incomplete</option>
+                </select>
+
+                <!-- Submit Button-->
+                <button type="submit">Submit</button>
+
+                <div asp-validation-summary="All"></div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
