@@ -7,6 +7,8 @@ namespace Mission8Assignment_Group310.Models
         public TasklistContext(DbContextOptions<TasklistContext> options) : base(options) { } //Constructor
 
         public DbSet<Task> Tasks { get; set; }
+
+        public DbSet<Category> Categories { get; set; }
     }
 
 }
