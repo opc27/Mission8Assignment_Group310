@@ -23,6 +23,11 @@ public class HomeController : Controller
     [HttpGet] // for entering tasks
     public IActionResult AddTask()
     {
+        // view bag for categories
+        ViewBag.Categories = _context.Categories
+            .OrderBy(x => x.CategoryName)
+            .ToList();
+        
         return View("AddTask", new Task());
     }
     
@@ -38,6 +43,9 @@ public class HomeController : Controller
         }
         else
         {
+            ViewBag.Categories = _context.Categories
+                .OrderBy(x => x.CategoryName)
+                .ToList();
             
             return View(response);
         }
@@ -50,7 +58,7 @@ public class HomeController : Controller
     }
     
     [HttpGet] // edit tasks (get)
-    public IActionResult Edit(int id) // pull the movie for the movie that we're editing
+    public IActionResult Edit(int id) // pull the task for the task that we're editing
     {
         var recordToEdit = _context.Tasks
             .Single(x => x.FormId == id);
@@ -59,16 +67,20 @@ public class HomeController : Controller
     }
 
     [HttpPost] // edit tasks (post)
-    public IActionResult Edit(Task updatedInfo) // save edited movie
+    public IActionResult Edit(Task updatedInfo) // save edited task
     {
         _context.Tasks.Update(updatedInfo);
         _context.SaveChanges();
+        
+        ViewBag.Categories = _context.Categories
+            .OrderBy(x => x.CategoryName)
+            .ToList();  
         
         return RedirectToAction("ViewTasks");
     }
 
     [HttpGet] // delete tasks (get)
-    public IActionResult Delete(int id) // delete movie
+    public IActionResult Delete(int id) // delete task
     {
         var recordToDelete = _context.Tasks
             .Single(x => x.FormId == id);

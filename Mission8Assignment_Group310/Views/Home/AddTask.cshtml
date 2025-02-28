@@ -4,7 +4,7 @@
 @{
 }
 
-@* @model Movie *@
+@* @model Task *@
 
 <div class="text-center">
     <h1 class="display-4">Enter Task Here</h1>
@@ -13,40 +13,42 @@
 
     <div class="container">
         <div class="form-container">
-            <form method="post"> 
+            <form method="post">
 
-                <!-- asp-for="TaskId" * -->
-                <input type="hidden" />
+                <!--Hidden FormId * -->
+                <input asp-for="FormId" type="hidden" />
 
                 <!-- Task (Required) • Due Date • Quadrant (Required) • Category (Dropdown containing options:  Home, School, Work, Church) • Completed (True/False) -->
-                
-                <!-- asp-for="TaskDescription" -->
-                <label>Task:</label>
-                <input type="text" required />
+                <label asp-for="TaskName">Task:</label>
+                <input type="text" asp-for="TaskName" required />
 
-                <!-- For the Rating field, use a dropdown menu (G, PG, PG-13, R).-->
-                <!-- asp-for="TaskQuadrant" -->
-                <label>Quadrant:</label>
-                <select>
+                <!-- Due Date-->
+                <label asp-for="DueDate">Due Date (MM-DD-YYYY):</label>
+                <input type="text" asp-for="DueDate" required />
+
+                <!-- Have the User select a Quadrant (1-3).-->
+                <label asp-for="Quadrant">Quadrant:</label>
+                <select asp-for="Quadrant" required>
+                    <option value="">-- Select a Quadrant --</option>
                     <option value=1>1 - Urgent/Important </option>
                     <option value=2>2 - Not Urgent/Important</option>
                     <option value=3>3 - Urgent/Not Important</option>
                     <option value=4>4 - Not Urgent/Not Important</option>
                 </select>
 
-                <!-- asp-for="CategoryID" -->
-                <label>Task Category:</label>
-                <select>
-                    <option value="">Select a Task Category</option>
-                @* @foreach (Category category in ViewBag.categories) *@
-                    <!-- { -->
-                @* <option value="@category.CategoryID">@category.CategoryName</option>  *@
-                    <!-- } -->
+                <!-- Select a Task Category -->
+                <label asp-for="CategoryID">Task Category:</label>
+                <select asp-for="CategoryID">
+                    <option value="">-- Select a Task Category --</option>
+                    @foreach (Category category in ViewBag.categories) *@
+                    { 
+                        <option value="@category.CategoryID">@category.CategoryName</option> 
+                    } 
                 </select>
 
-                <!-- asp-for="TaskDone"> -->
-                <label>Task Status:</label>
-                <select required>
+                <!-- Select Task Complete or Incomplete -->
+                <label asp-for="Complete">Task Status:</label>
+                <select asp-for="Complete">
                     <option value="">-- Select --</option>
                     <option value="true">Complete</option>
                     <option value="false">Incomplete</option>
