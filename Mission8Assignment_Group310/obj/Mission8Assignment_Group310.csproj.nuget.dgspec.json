@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/oliviachristensen/Downloads/RiderProjects/Mission8Assignment_Group310/Mission8Assignment_Group310/Mission8Assignment_Group310.csproj": {}
+    "/Users/zackmcdougal/RiderProjects/Mission8Assignment_Group310/Mission8Assignment_Group310/Mission8Assignment_Group310.csproj": {}
   },
   "projects": {
-    "/Users/oliviachristensen/Downloads/RiderProjects/Mission8Assignment_Group310/Mission8Assignment_Group310/Mission8Assignment_Group310.csproj": {
+    "/Users/zackmcdougal/RiderProjects/Mission8Assignment_Group310/Mission8Assignment_Group310/Mission8Assignment_Group310.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/oliviachristensen/Downloads/RiderProjects/Mission8Assignment_Group310/Mission8Assignment_Group310/Mission8Assignment_Group310.csproj",
+        "projectUniqueName": "/Users/zackmcdougal/RiderProjects/Mission8Assignment_Group310/Mission8Assignment_Group310/Mission8Assignment_Group310.csproj",
         "projectName": "Mission8Assignment_Group310",
-        "projectPath": "/Users/oliviachristensen/Downloads/RiderProjects/Mission8Assignment_Group310/Mission8Assignment_Group310/Mission8Assignment_Group310.csproj",
-        "packagesPath": "/Users/oliviachristensen/.nuget/packages/",
-        "outputPath": "/Users/oliviachristensen/Downloads/RiderProjects/Mission8Assignment_Group310/Mission8Assignment_Group310/obj/",
+        "projectPath": "/Users/zackmcdougal/RiderProjects/Mission8Assignment_Group310/Mission8Assignment_Group310/Mission8Assignment_Group310.csproj",
+        "packagesPath": "/Users/zackmcdougal/.nuget/packages/",
+        "outputPath": "/Users/zackmcdougal/RiderProjects/Mission8Assignment_Group310/Mission8Assignment_Group310/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/oliviachristensen/.nuget/NuGet/NuGet.Config"
+          "/Users/zackmcdougal/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -83,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/zackmcdougal/.dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
