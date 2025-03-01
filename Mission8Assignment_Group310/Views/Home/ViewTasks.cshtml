@@ -1,7 +1,75 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model List<Mission8Assignment_Group310.Models.Task>
+
 @{
+    ViewData["Title"] = "Task Quadrants";
 }
 
-<p>This is the view to see all of the tasks!</p>
+<div style="max-width: 900px; margin: auto; padding-top: 20px;">
+    <h1 style="text-align: center; font-weight: bold;">Task Quadrants</h1>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 10px; margin-top: 20px;">
+        <!-- Quadrant I -->
+        <div style="border: 2px solid black; padding: 15px; text-align: center;">
+            <h2 style="font-size: 1.3rem; font-weight: bold;">Quadrant I: <br> Important / Urgent</h2>
+            <div>
+                @foreach (var task in Model.Where(t => t.Quadrant == 1))
+                {
+                    <div style="background-color: #f8f9fa; padding: 10px; margin: 5px 0; border-radius: 5px;">
+                        <p><strong>@task.TaskName</strong></p>
+                        <p>(Due: @task.DueDate)</p>
+                        <a asp-action="Edit" asp-route-id="@task.TaskId">Edit</a> |
+                        <a asp-action="Delete" asp-route-id="@task.TaskId">Delete</a>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Quadrant II -->
+        <div style="border: 2px solid black; padding: 15px; text-align: center;">
+            <h2 style="font-size: 1.3rem; font-weight: bold;">Quadrant II: <br> Important / Not Urgent</h2>
+            <div>
+                @foreach (var task in Model.Where(t => t.Quadrant == 2))
+                {
+                    <div style="background-color: #f8f9fa; padding: 10px; margin: 5px 0; border-radius: 5px;">
+                        <p><strong>@task.TaskName</strong></p>
+                        <p>(Due: @task.DueDate)</p>
+                        <a asp-action="Edit" asp-route-id="@task.TaskId">Edit</a> |
+                        <a asp-action="Delete" asp-route-id="@task.TaskId">Delete</a>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Quadrant III -->
+        <div style="border: 2px solid black; padding: 15px; text-align: center;">
+            <h2 style="font-size: 1.3rem; font-weight: bold;">Quadrant III: <br> Not Important / Urgent</h2>
+            <div>
+                @foreach (var task in Model.Where(t => t.Quadrant == 3))
+                {
+                    <div style="background-color: #f8f9fa; padding: 10px; margin: 5px 0; border-radius: 5px;">
+                        <p><strong>@task.TaskName</strong></p>
+                        <p>(Due: @task.DueDate)</p>
+                        <a asp-action="Edit" asp-route-id="@task.TaskId">Edit</a> |
+                        <a asp-action="Delete" asp-route-id="@task.TaskId">Delete</a>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Quadrant IV -->
+        <div style="border: 2px solid black; padding: 15px; text-align: center;">
+            <h2 style="font-size: 1.3rem; font-weight: bold;">Quadrant IV: <br> Not Important / Not Urgent</h2>
+            <div>
+                @foreach (var task in Model.Where(t => t.Quadrant == 4))
+                {
+                    <div style="background-color: #f8f9fa; padding: 10px; margin: 5px 0; border-radius: 5px;">
+                        <p><strong>@task.TaskName</strong></p>
+                        <p>(Due: @task.DueDate)</p>
+                        <a asp-action="Edit" asp-route-id="@task.TaskId">Edit</a> |
+                        <a asp-action="Delete" asp-route-id="@task.TaskId">Delete</a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

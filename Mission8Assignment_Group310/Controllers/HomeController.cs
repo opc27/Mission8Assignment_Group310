@@ -52,17 +52,38 @@ public class HomeController : Controller
     }
     
     // displaying tasks
+    // Display tasks grouped in quadrants
     public IActionResult ViewTasks()
     {
-        return View();
+        var tasks = _tasklistContext.Tasks
+            .Where(t => t.Complete == false || t.Complete == null) // Show only incomplete tasks
+            .ToList();
+        
+        if (tasks == null)
+        {
+            tasks = new List<Task>();
+        }
+
+        return View(tasks);
     }
+
     
     [HttpGet] // edit tasks (get)
     public IActionResult Edit(int id) // pull the task for the task that we're editing
     {
         var recordToEdit = _tasklistContext.Tasks
-            .Single(x => x.TaskId == id);
+            .SingleOrDefault(x => x.TaskId == id);
+
+        if (recordToEdit == null)
+        {
+            return NotFound();
+        }
+
         
+        ViewBag.Categories = _tasklistContext.Categories
+            .OrderBy(x => x.CategoryName)
+            .ToList();
+
         return View("AddTask", recordToEdit);
     }
 
@@ -80,13 +101,19 @@ public class HomeController : Controller
     }
 
     [HttpGet] // delete tasks (get)
-    public IActionResult Delete(int id) // delete task
+    public IActionResult Delete(int id)
     {
-        var recordToDelete = _tasklistContext.Tasks
-            .Single(x => x.TaskId == id);
+        var task = _tasklistContext.Tasks.SingleOrDefault(x => x.TaskId == id);
 
-        return View(recordToDelete);
+        if (task != null)
+        {
+            _tasklistContext.Tasks.Remove(task);
+            _tasklistContext.SaveChanges();
+        }
+
+        return RedirectToAction("ViewTasks");
     }
+
 
     [HttpPost] // delete tasks (post)
     public IActionResult Delete(Task task) // save changes to database
